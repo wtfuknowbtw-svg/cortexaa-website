@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import HowItWorks from './sections/HowItWorks';
@@ -18,6 +19,8 @@ function App() {
   return (
     <div className="min-h-screen bg-dark text-white selection:bg-whatsapp/30 selection:text-whatsapp-dark">
       <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-whatsapp/10 via-dark to-dark pointer-events-none z-0" />
+
+      <Navbar />
 
       <main className="relative z-10">
         <Hero />

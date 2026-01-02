@@ -5,27 +5,45 @@ export default function Button({
   children,
   className,
   icon: Icon,
+  variant = "primary", // primary, secondary, outline
   type = "button",
+  href,
   onClick,
   disabled,
   ...props
 }) {
+  const variants = {
+    primary: "bg-whatsapp text-white shadow-lg shadow-whatsapp/25 hover:shadow-whatsapp/40 border border-transparent",
+    secondary: "bg-dark-200 text-white border border-white/10 hover:bg-dark-300 hover:border-white/20",
+    outline: "bg-transparent text-whatsapp border border-whatsapp/20 hover:bg-whatsapp/5",
+  };
+
+  const Component = href ? motion.a : motion.button;
+  const linkProps = href ? { href } : { type };
+
   return (
-    <motion.button
-      type={type}
-      onClick={onClick}          // ✅ THIS WAS MISSING
-      disabled={disabled}        // ✅ IMPORTANT
-      whileHover={!disabled ? { scale: 1.02 } : {}}
-      whileTap={!disabled ? { scale: 0.98 } : {}}
+    <Component
+      {...linkProps}
+      onClick={onClick}
+      disabled={disabled}
+      whileHover={!disabled ? { scale: 1.05 } : {}}
+      whileTap={!disabled ? { scale: 0.95 } : {}}
       className={cn(
-        "relative flex items-center justify-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300",
+        "relative flex items-center gap-2 px-8 py-4 rounded-xl font-bold transition-all duration-300",
+        variants[variant] || variants.primary,
         disabled && "opacity-60 cursor-not-allowed",
         className
       )}
-      {...props}                 // ✅ ALSO CRITICAL
+      {...props}
     >
-      {Icon && <Icon className="w-5 h-5" />}
       {children}
-    </motion.button>
+      {Icon && <Icon className="w-5 h-5" />}
+
+      {/* Subtle Shine Effect for Primary */}
+      {variant === 'primary' && (
+        <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/20" />
+      )}
+    </Component>
   );
 }
+
