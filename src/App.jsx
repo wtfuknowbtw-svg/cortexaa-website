@@ -17,8 +17,8 @@ function App() {
   );
 
   return (
-    <div className="min-h-screen bg-dark text-white selection:bg-whatsapp/30 selection:text-whatsapp-dark">
-      <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-whatsapp/10 via-dark to-dark pointer-events-none z-0" />
+    <div className="min-h-screen bg-dark text-white selection:bg-brand-primary/30 selection:text-brand-accent">
+      <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-primary/10 via-dark to-dark pointer-events-none z-0" />
 
       <Navbar />
 

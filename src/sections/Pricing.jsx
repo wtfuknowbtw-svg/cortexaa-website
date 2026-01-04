@@ -9,7 +9,7 @@ export default function Pricing() {
             <div className="max-w-4xl mx-auto">
                 <Card className="text-center p-12 md:p-16 relative overflow-hidden">
                     {/* Background Gradients */}
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-whatsapp/10 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary/10 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
                     <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent-blue/10 rounded-full blur-3xl -z-10 -translate-x-1/2 translate-y-1/2" />
 
                     <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -37,13 +37,13 @@ export default function Pricing() {
                     {/* Trust Indicators */}
                     <div className="mt-12 pt-8 border-t border-white/5 flex flex-wrap justify-center gap-6 md:gap-12 text-sm text-gray-500">
                         <span className="flex items-center gap-2">
-                            <Check className="w-4 h-4 text-whatsapp" /> No Hidden Fees
+                            <Check className="w-4 h-4 text-brand-secondary" /> No Hidden Fees
                         </span>
                         <span className="flex items-center gap-2">
-                            <Check className="w-4 h-4 text-whatsapp" /> Free Initial Consultation
+                            <Check className="w-4 h-4 text-brand-secondary" /> Free Initial Consultation
                         </span>
                         <span className="flex items-center gap-2">
-                            <Check className="w-4 h-4 text-whatsapp" /> Scalable Infrastructure
+                            <Check className="w-4 h-4 text-brand-secondary" /> Scalable Infrastructure
                         </span>
                     </div>
                 </Card>

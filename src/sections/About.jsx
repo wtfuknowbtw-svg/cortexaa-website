@@ -28,7 +28,7 @@ const features = [
 
 export default function About() {
     return (
-        <Section id="about" className="bg-dark-50">
+        <Section id="about">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -52,7 +52,7 @@ export default function About() {
                                 transition={{ delay: index * 0.1 }}
                                 className="flex items-center gap-4"
                             >
-                                <div className="w-10 h-10 rounded-full bg-whatsapp/10 flex items-center justify-center text-whatsapp flex-shrink-0">
+                                <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center text-brand-primary flex-shrink-0">
                                     <item.icon className="w-5 h-5" />
                                 </div>
                                 <span className="text-gray-200 font-medium">{item.text}</span>
@@ -62,7 +62,7 @@ export default function About() {
                 </div>
 
                 <div className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-whatsapp/20 to-purple-500/20 blur-[100px] -z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary/20 to-purple-500/20 blur-[100px] -z-10" />
                     <Card className="p-8 border-white/10 bg-dark/50 backdrop-blur-xl">
                         <h3 className="text-xl font-bold mb-6">Why Businesses Choose Cortexaa</h3>
                         <div className="space-y-6">

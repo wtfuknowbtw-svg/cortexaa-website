@@ -13,9 +13,9 @@ export default function Button({
   ...props
 }) {
   const variants = {
-    primary: "bg-whatsapp text-white shadow-lg shadow-whatsapp/25 hover:shadow-whatsapp/40 border border-transparent",
+    primary: "bg-brand-primary text-white shadow-lg shadow-brand-primary/25 hover:shadow-brand-primary/40 border border-transparent",
     secondary: "bg-dark-200 text-white border border-white/10 hover:bg-dark-300 hover:border-white/20",
-    outline: "bg-transparent text-whatsapp border border-whatsapp/20 hover:bg-whatsapp/5",
+    outline: "bg-transparent text-brand-primary border border-brand-primary/20 hover:bg-brand-primary/5",
   };
 
   const Component = href ? motion.a : motion.button;

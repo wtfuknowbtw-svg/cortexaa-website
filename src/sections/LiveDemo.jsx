@@ -14,21 +14,27 @@ export default function LiveDemo() {
     };
 
     return (
-        <Section id="live-demo" className="bg-dark">
+        <Section id="live-demo">
             <div className="text-center mb-16">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-whatsapp/10 border border-whatsapp/20 text-whatsapp text-sm font-medium mb-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-sm font-medium mb-4">
                     <span className="relative flex h-2 w-2">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-whatsapp opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-whatsapp"></span>
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-primary"></span>
                     </span>
                     Live WhatsApp Automation Demo
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                    See how it <span className="text-gradient">Works</span>
+                    Manage your entire automation <br />
+                    <span className="text-gradient">ecosystem</span>
                 </h2>
-                <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                    See how a real WhatsApp automation works.
-                </p>
+                <div className="text-gray-400 text-lg max-w-3xl mx-auto space-y-4">
+                    <p>Track leads, monitor active workflows, and control WhatsApp automations in real time.</p>
+                    <p>Get clear insights with live logs, performance metrics, and system status updates.</p>
+                    <p className="text-base text-gray-500 pt-2">
+                        Secure access ensures only authorized admins stay in control. <br />
+                        Built for speed, scalability, and total operational visibility.
+                    </p>
+                </div>
 
                 <div className="flex justify-center gap-4 mt-8">
                     <button
@@ -36,7 +42,7 @@ export default function LiveDemo() {
                         disabled={isProcessing}
                         className={cn(
                             "px-6 py-2 rounded-full text-sm font-medium transition-all border",
-                            "bg-whatsapp text-white border-whatsapp shadow-lg shadow-whatsapp/20 hover:scale-105"
+                            "bg-brand-primary text-white border-brand-primary shadow-lg shadow-brand-primary/20 hover:scale-105"
                         )}
                     >
                         {isProcessing ? 'Running Demo...' : 'Start Live Demo'}

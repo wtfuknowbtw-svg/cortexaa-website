@@ -32,7 +32,7 @@ export default function Navbar() {
             >
                 <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                     <a href="#" className="flex items-center gap-2 text-xl font-bold tracking-tight">
-                        <div className="w-8 h-8 rounded-lg bg-whatsapp flex items-center justify-center text-white">
+                        <div className="w-8 h-8 rounded-lg bg-brand-primary flex items-center justify-center text-white">
                             <MessageCircle className="w-5 h-5 fill-current" />
                         </div>
                         <span>Cortexaa</span>
@@ -44,7 +44,7 @@ export default function Navbar() {
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="text-sm font-medium text-gray-400 hover:text-white transition-colors hover:shadow-[0_4px_20px_-5px_rgba(37,211,102,0.5)]"
+                                className="text-sm font-medium text-gray-400 hover:text-white transition-colors hover:shadow-[0_4px_20px_-5px_rgba(124,58,237,0.5)]"
                             >
                                 {link.name}
                             </a>
@@ -82,7 +82,7 @@ export default function Navbar() {
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setIsMobileMenuOpen(false)}
-                                    className="text-lg font-medium text-gray-300 hover:text-whatsapp py-2 border-b border-white/5"
+                                    className="text-lg font-medium text-gray-300 hover:text-brand-primary py-2 border-b border-white/5"
                                 >
                                     {link.name}
                                 </a>

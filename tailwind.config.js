@@ -12,11 +12,16 @@ export default {
           dark: "#075e54",
         },
         dark: {
-          DEFAULT: "#0a0a0a",
-          50: "#121212",
-          100: "#1a1a1a",
-          200: "#2a2a2a",
-          300: "#404040",
+          DEFAULT: "#030303", // Near-black, deeper than before
+          50: "#0a0a0a",
+          100: "#121212",
+          200: "#1a1a1a",
+          300: "#2a2a2a",
+        },
+        brand: {
+          primary: "#7c3aed", // Violet/Electric Purple
+          secondary: "#06b6d4", // Cyan
+          accent: "#a78bfa", // Soft Neon Violet
         },
         accent: {
           blue: "#3b82f6",

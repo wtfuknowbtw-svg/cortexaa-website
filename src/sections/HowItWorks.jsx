@@ -22,14 +22,14 @@ const steps = [
         icon: Rocket,
         title: "Step 3 – Launch",
         desc: "Automation goes live. You save time from day one. No disruption.",
-        color: "text-whatsapp",
-        bg: "bg-whatsapp/10"
+        color: "text-brand-primary",
+        bg: "bg-brand-primary/10"
     }
 ];
 
 export default function HowItWorks() {
     return (
-        <Section id="how-it-works" className="bg-dark">
+        <Section id="how-it-works">
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                     How It <span className="text-gradient">Works</span>
